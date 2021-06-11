@@ -46,6 +46,7 @@ body {
     padding: 0px;
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;
     background: var(--clr-gray100);
 }
 
@@ -172,6 +173,11 @@ body {
     flex: 1 1 auto;
 }
 
+.titulo-segundo-par-segunda-pag {
+    top: 10% !important;
+    left: 50% !important;
+}
+
 .div-texto2 h1 {
     width: 75vw;
     margin: 0;
@@ -214,6 +220,10 @@ body {
         top: 56%;
         left: 50%;
     }
+    .titulo-segundo-par-segunda-pag {
+        top: 35% !important;
+        left: 50% !important;
+    }
     .div-texto2 h1 {
         top: 37%;
         left: 50%;
@@ -238,6 +248,10 @@ body {
     .div-texto p {
         top: 56%;
         left: 50%;
+    }
+    .titulo-segundo-par-segunda-pag {
+        top: 40% !important;
+        left: 50% !important;
     }
     .div-texto2 h1 {
         top: 40%;
