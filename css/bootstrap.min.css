@@ -25,6 +25,7 @@ p {
     color: #414141;
     z-index: 10;
     margin-bottom: 0px;
+    padding: 0px;
 }
 
 h1 {
@@ -48,6 +49,26 @@ body {
     flex-direction: column;
     overflow-x: hidden;
     background: var(--clr-gray100);
+}
+
+a:link {
+    color: darkgray;
+    text-decoration: none;
+}
+
+a:visited {
+    color: darkgray;
+    text-decoration: none;
+}
+
+a:hover {
+    color: darkgray;
+    text-decoration: underline;
+}
+
+a:active {
+    color: darkgray;
+    text-decoration: underline;
 }
 
 .nav-2 {
@@ -82,6 +103,7 @@ body {
     text-decoration: none;
     color: white;
     transition: all 200ms ease-in;
+    font-size: 15px;
 }
 
 .nav-item a:hover {
@@ -125,6 +147,7 @@ body {
     transform: translate(-50%, -50%);
 }
 
+.div-texto-primeirapag,
 .div-texto {
     display: flex;
     flex-direction: column;
@@ -136,15 +159,26 @@ body {
     text-align: left;
 }
 
-.div-texto>* {
+.div-texto,
+.div-texto-primeirapag>* {
     flex: 1 1 auto;
 }
 
-.div-texto h1 {
+.div-texto,
+.div-texto-primeirapag h1 {
     width: 75vw;
     margin: 0;
     position: absolute;
     top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.div-texto-primeirapag p {
+    width: 75vw;
+    margin: 0;
+    position: absolute;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -158,7 +192,8 @@ body {
     transform: translate(-50%, -50%);
 }
 
-.div-texto2 {
+.div-texto2,
+.div-texto2-primeirapag {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -169,7 +204,8 @@ body {
     text-align: left;
 }
 
-.div-texto2>* {
+.div-texto2,
+.div-texto2-primeirapag>* {
     flex: 1 1 auto;
 }
 
@@ -178,7 +214,8 @@ body {
     left: 50% !important;
 }
 
-.div-texto2 h1 {
+.div-texto2,
+.div-texto2-primeirapag h1 {
     width: 75vw;
     margin: 0;
     position: absolute;
@@ -187,6 +224,7 @@ body {
     transform: translate(-50%, -50%);
 }
 
+.div-texto2-primeirapag,
 .div-texto2 p {
     width: 75vw;
     margin: 0;
@@ -206,17 +244,22 @@ body {
     .nav-2 {
         display: block;
     }
+    .nav-item a {
+        font-size: 16px;
+    }
     p {
         font-size: 14px;
     }
     h1 {
         font-size: 28px;
     }
-    .div-texto h1 {
+    .div-texto,
+    .div-texto-primeirapag h1 {
         top: 41%;
         left: 50%;
     }
-    .div-texto p {
+    .div-texto,
+    .div-texto-primeirapag p {
         top: 56%;
         left: 50%;
     }
@@ -224,11 +267,13 @@ body {
         top: 35% !important;
         left: 50% !important;
     }
-    .div-texto2 h1 {
+    .div-texto2,
+    .div-texto2-primeirapag h1 {
         top: 37%;
         left: 50%;
     }
-    .div-texto2 p {
+    .div-texto2,
+    .div-texto2-primeirapag p {
         top: 56%;
         left: 50%;
     }
@@ -241,11 +286,16 @@ body {
     h1 {
         font-size: 35px;
     }
-    .div-texto h1 {
+    .nav-item a {
+        font-size: 18px;
+    }
+    .div-texto,
+    .div-texto-primeirapag h1 {
         top: 42%;
         left: 50%;
     }
-    .div-texto p {
+    .div-texto,
+    .div-texto-primeirapag p {
         top: 56%;
         left: 50%;
     }
@@ -260,6 +310,41 @@ body {
     .div-texto2 p {
         top: 56%;
         left: 50%;
+    }
+    .textos-primeira-pag {
+        height: 100vh;
+    }
+    .div-texto-primeirapag {
+        width: 45%;
+        top: 120%;
+        padding: 35px;
+        position: absolute;
+        left: 3%;
+    }
+    .div-texto2-primeirapag {
+        width: 45%;
+        top: 120%;
+        padding: 35px;
+        position: absolute;
+        right: 3%;
+    }
+    .div-texto2-primeirapag h1,
+    .div-texto2-primeirapag p {
+        width: 90%;
+    }
+    .div-texto-primeirapag h1,
+    .div-texto-primeirapag p {
+        width: 90%;
+    }
+    .div-texto-primeirapag h1,
+    .div-texto2-primeirapag h1 {
+        top: 32%;
+    }
+    .div-texto2-primeirapag p {
+        top: 56%;
+    }
+    .div-texto-primeirapag p {
+        top: 53%;
     }
 }
 
