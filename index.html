@@ -80,7 +80,7 @@
         </div>
 
         <div class="textos-primeira-pag">
-            <div class="div-texto-primeirapag">
+            <div class="div-texto-primeirapag div-texto">
                 <div>
                     <div>
                         <h1>Vida pessoal</h1>
@@ -93,7 +93,7 @@
                 </div>
             </div>
 
-            <div class="div-texto2-primeirapag">
+            <div class="div-texto2-primeirapag div-texto2">
                 <h1 class="titulo-segundo-paragrafo">Um pouco mais sobre mim</h1>
                 <p class="segundo-par">No momento estou fazendo faculdade de Análise e Desenvolvimento de sistemas, por que, como já falei antes, no curso técnico que eu fiz em meu ensino médio me apaixonei pela programação e tudo o que ela é capaz de fazer. <br> Ainda estou
                     iniciando nesse mundo, mas espero que com mais experiências e muito aprendizado consiga melhorar minhas habilidades como programador, designer e como pessoa. <br> Me vejo lá na frente uma pessoa de sucesso tanto pessoal quanto profissional
@@ -101,8 +101,34 @@
                     do seu futuro que deixa de existir”
                 </p>
             </div>
+
         </div>
+        <img src="/img/img-segundo-paragrafo-segunda-pag.png" alt="desenho de um menino mexendo em um computador" class="img-final-pag">
+
     </div>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="/img/seta.png" style="height: 40px; width: 40px; top: 2px; left: 0px; transform: rotate(270deg);"></button>
+
+    <script>
+        var mybutton = document.getElementById("myBtn");
+
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
 
 
 </body>
